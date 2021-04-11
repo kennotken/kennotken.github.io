@@ -1,0 +1,442 @@
+$white: #ffffff
+$blue: #1eacc7
+
+=btn_hover
+	&:hover
+		background-image: none
+		background-color: $blue
+
+*
+	font-family: 'Roboto', sans-serif
+ul
+	margin-bottom: 0
+a
+	text-decoration: none
+li
+	list-style-type: none
+
+header
+	position:relative
+
+nav
+	height: 50px
+	background-color: #212121
+
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 13px 70px
+	margin: 0
+
+	&_link
+		color: $white
+		font-style: 15px
+		font-weight: 300
+	&_item
+		border-right: 2px dotted black
+		padding-right: 28px
+
+.subheader
+	position: absolute
+	width: 100%
+	height: 84px
+	background-color: rgba(0, 0, 0, 0.6)
+	.subheader_logo
+		display: block
+		max-width: 100%
+		margin-top: 16px
+	.subheader_official
+		margin-top: 6px
+		opacity: 0.5
+		color: $white
+		font-size: 13px
+		font-weight: 400
+	.subheader_call
+		color: $white
+		font-size: 12px
+		font-weight: 300
+		margin-top: 19px
+		text-align: right
+	.subheader_phone
+		display: block
+		margin-top: 8px
+		color: $white
+		font-size: 22px
+		font-weight: 400
+		text-transform: uppercase
+		text-align: right
+		line-height: 12px
+	.subheader_btn 
+		margin-top: 19px
+		border-radius: 4px
+		padding: 18px 20px 18px 20px
+		line-height: 12px
+		height: 46px
+		background-image: linear-gradient(0deg, $blue 0%, #4ce2ff 100%)
+		border: none
+		text-transform: uppercase
+		font-size: 14px
+		color: $white
+		font-weight: 400
+		text-align: center
+		filter: drop-shadow(0.707px 0.707px 0px rgba(0, 0, 0, 0.21))
+		+btn_hover
+
+.promo 
+	min-height: 800px
+	background: url('../img/bg.png') center (center / cover) no-repeat
+	padding: 150px 0 135px 0
+	&_header 
+		color: $white
+		font-size: 60px
+		font-weight: 900
+		text-align: center
+		line-height: 60px
+		margin: 0
+		text-align: center
+		text-transform: uppercase
+	&_subheader 
+		color: $white
+		font-size: 36px
+		line-height: 36px
+		font-weight: 900
+		text-align: center
+		margin: 0
+		margin-top: 22px
+		text-align: center
+		text-transform: uppercase
+	&_descr 
+		color: $white
+		font-size: 18px
+		font-weight: 400
+		line-height: 24px
+		text-align: center
+		margin-top: 23px
+	&_btn 
+		display: block
+		margin: 118px auto 0 auto
+		background-image: linear-gradient(0deg, $blue 0%, #4ce2ff 100%)
+		border: none
+		border-radius: 4px
+		font-size: 18px
+		color: $white
+		font-weight: 400
+		text-align: center
+		filter: drop-shadow(0.707px 0.707px 0px rgba(0, 0, 0, 0.21))
+		text-transform: uppercase
+		height: 63px
+		width: 259px
+		+btn_hover
+
+.black_badge
+	margin: 0 auto
+	color:#ffffff
+	background-color:#000000
+	font-size: 11px
+	text-align: center
+	font-weight: 250
+	line-height: 25px
+	width: 113px
+	display: block
+	text-transform: uppercase
+
+.white_badge
+	margin: 0 auto
+	color:#070716
+	background-color:#ffffff
+	font-size: 11px
+	text-align: center
+	font-weight: 250
+	line-height: 25px
+	width: 113px
+	display: block
+	text-transform: uppercase
+
+.black_header
+	margin: 38px 0 0 0
+	font-size: 38px
+	color:#222222
+	font-weight: 700
+	text-align: center
+	text-transform: uppercase
+
+.white_header
+	margin: 29px 0 0 0
+	font-size: 38px
+	color: $white
+	font-weight: 700
+	text-align: center
+	text-transform: uppercase
+
+.white_subheader
+	display: block
+	font-size: 17px
+	color: $white
+	font-weight: 400
+	text-align: center
+	margin-top: 20px
+
+.cause
+	min-height: 900px
+	padding: 70px 0 16px 0
+	&_list
+		margin-top: 40px
+	&_item
+		display: flex
+		margin-bottom: 35px
+		justify-content: center
+	&_img_wrapper
+		background-color: $blue
+		display: flex 
+		align-items: center 
+		justify-content: center
+		width: 114px
+		height: 114px
+		border-radius: 50%
+		margin-right: 26px
+	&_descr
+		width: 343px
+	&_subheader
+		font-size: 17px
+		line-height: 21px
+		color: $blue
+		font-weight: 400
+		text-align: left
+	&_text
+		color: #202020
+		font-size: 15px
+		font-weight: 300
+		line-height: 21px
+		margin: 0
+.capabilities
+	min-height: 865px
+	background: url('../img/capabilities_bg.png') no-repeat center center fixed
+	padding: 48px 0 61px 0
+	&_subheader
+		display: block
+		margin: 19px 0 32px 0
+		text-align: center
+		font-size: 17px
+		color: #222222
+		font-weight: 400
+	&_list
+		margin: 0
+	&_img
+		margin: 0 auto
+		position: relative
+	&_item
+		padding: 0
+		margin-bottom: 19px
+		&_wraper
+			width: 320px
+			height: 280px
+			margin: 0 auto
+			position: relative
+			&:after
+				content: ""
+				background: url('../icons/plus.svg') center center no-repeat
+				z-index: 5
+				width: 28px
+				height: 28px
+				background-color: #000
+				border-radius: 50%
+				position: absolute
+				bottom: 35px
+				left: 50%
+				transform: translateX(-50%)
+		&_title
+			font-size: 8px
+			position: absolute
+			z-index: 2
+			font-size: 24px
+			color: $white
+			font-weight: 400
+			text-align: center
+			width: 320px
+			margin-top: 92px
+			padding: 0 25px 0 25px
+			text-transform: uppercase
+.auto
+	min-height: 898px
+	background-color: #070715
+	position: relative
+	padding-top: 57px
+	&_header
+		min-height: 500px
+		position: relative
+	&_footer
+		background: url('../img/capabilities_bg.png') no-repeat center center fixed
+		position: absolute
+		width: 100%
+		left: 0
+		padding-bottom: 76px
+	&_circle
+		background-color: #1ca8c3
+		width: 583px
+		height: 267px
+		margin: 0 auto
+		border-radius: 292px 292px 0 0
+		padding-top: 31px
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 0
+		z-index: 10
+		&_img
+			margin: 0 auto
+			display: block
+	&_img_wraper
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		top: -144px
+		z-index: 20
+	&_description
+		font-size: 17px
+		line-height: 24px
+		color: #222222
+		font-weight: 300
+		text-align: center
+		display: flex
+		flex-direction: column
+		margin-top: 217px
+
+.require
+	padding: 68px 0 84px 0
+	.black_header
+		margin-top: 33px
+	&_block
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0
+	&_title
+		color: #1ca8c3
+		font-size: 22px
+		font-weight: 400
+	&_list
+		padding-left: 50px
+		margin-top: 22px
+		li
+			position: relative
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			&::before
+				content: ""
+				width: 21px
+				height: 20px
+				background: url('../icons/check_blue.svg') center (center / cover) no-repeat
+				display: block
+				position: absolute
+				left: -32px;
+				top: 3px
+	&_descr
+		margin-top: 25px
+		display: block
+		font-size: 17px
+		font-weight: 300
+		color: #1ca8c3
+	.warning
+		.require_title
+			color: #ff5656
+		.require_list
+			li
+				&::before
+					background: url('../icons/check_red.svg') center (center / cover) no-repeat
+.world
+	min-height: 718px
+	background: url('../img/map.jpg') center (center / cover) no-repeat
+	padding: 50px 0 48px 0
+	position: relative
+	&_link
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+		bottom: 49px
+		text-align: center
+		font-size: 15px
+		font-weight: 400
+		line-height: 68px
+		text-transform: uppercase
+		color: #1fbad6
+		&:hover 
+			color: $white
+footer
+	min-height: 156px
+	padding-top: 50px
+	position: relative
+.footer
+	&_center
+		padding: 0
+	&_list
+		padding: 0
+		display: flex
+		justify-content: space-between
+		position: relative
+		margin-bottom: 16px
+		&::before
+			content: ""
+			display: block
+			width: 300px
+			height: 4px
+			background-color: #1fbad6
+			position: absolute
+			top: -32px
+			left: 50%
+			transform: translateX(-50%)
+		&_item
+			line-height: 1
+			a
+				font-size: 15px
+				color: #070716
+				font-weight: 300
+				text-align: center
+				text-transform: uppercase
+	&_sublist
+		padding: 0
+		display: flex
+		justify-content: space-between
+		margin-bottom: 16px
+		&_item
+			line-height: 1
+			a
+				font-size: 11px
+				color: #999999
+				font-weight: 300
+	&_link
+		font-size: 11px
+		color: #1fbad6
+		font-weight: 400
+		text-align: center
+		display: block
+	&_social
+		position: absolute
+		left: 22px
+		&_wraper
+			display: flex
+		&_item
+			width: 33px
+			height: 33px
+			background-color: #070716
+			border-radius: 50%
+			margin-right: 8px
+			display: flex
+			justify-content: center
+			align-items: center
+			&:last-child
+				margin-right: 0
+			i
+				color: $white
+	&_store
+		position: absolute
+		display: flex
+		flex-direction: row
+		right: 23px
+		top: 50px
+		&_wraper
+			display: flex
+		&_item
+			margin-right: 6px
+			&:last-child
+				margin-right: 0
