@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>My TODO App</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>
+            Tiny TODO
+        </h1>
+
+
+
+        <form class="task__form">
+            <input type="text" name="Name" id="task" placeholder="Enter Task">
+            <button type="submit">◎ܫ◎</button>
+        </form>
+
+
+
+        <table>
+            <tr>
+                <th>Task</th>
+                <th>Status</th>
+                <th>#</th>
+            </tr>
+            <tr>
+                <td>Ебать гусей</td>
+                <td class="in-progress">Выполняется</td>
+                <td>
+                    <span class="material-icons">delete</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Ловить гусей</td>
+                <td class="todo">будет</td>
+                <td>
+                    <span class="material-icons">delete</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Вернуть гусей</td>
+                <td class="finished">Закончено</td>
+                <td>
+                    <span class="material-icons">delete</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
